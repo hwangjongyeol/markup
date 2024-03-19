@@ -180,5 +180,38 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/form-submission-handler.js" data-cfasync="false" type="text/javascript" ></script>
+			<script>
+				function check() {
+
+					var name = document.getElementById("name").value;
+					if (name === "") {
+						alert("이름을 입력해주세요.");
+						return false;
+					}
+
+					var email = document.getElementById("email").value;
+					if (email != "") {
+						var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+						if (exptext.test(email) == false) {
+							//이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우
+							alert("입력한 메일형식이 올바르지 않습니다.");
+							document.formtag.email.focus();
+							return false;
+						}
+					} else {
+						alert("입력한 입력해주세요.");
+						return false;
+					}
+
+					var message = document.getElementById("message").value;
+					if (message === "") {
+						alert("메시지를 입력해주세요.");
+						return false;
+					}
+
+
+					return true;
+				}
+			</script>
 	</body>
 </html>
