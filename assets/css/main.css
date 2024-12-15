@@ -3767,7 +3767,7 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #7b97fb;
+			background-color: #ffffff;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
@@ -4245,8 +4245,26 @@ input, select, textarea {
 	}
 }
 
+.wrapper.font-color-type1 h2,  .wrapper.font-color-type1 p{
+	color: #373737;
+}
 
+/* 공통 선 스타일 */
+.line {
+	width: 80%; /* 양쪽에 여백을 둔 선 */
+	height: 1px; /* 선 두께 */
+	background-color: #cccccc; /* 선 색상 */
+	margin: 0 auto; /* 위아래 여백과 가운데 정렬 */
+	opacity: 0.7; /* 약간의 투명도 */
+}
 
+.fade-in {
+	opacity: 0; /* 초기 상태: 투명 */
+	transform: translateY(20px); /* 약간 아래로 이동 */
+	transition: opacity 1s ease, transform 1s ease; /* 서서히 나타나는 애니메이션 */
+}
 
-
-
+.fade-in.show {
+	opacity: 1; /* 나타나는 상태 */
+	transform: translateY(0); /* 제자리로 이동 */
+}
