@@ -1,0 +1,65 @@
+/* 공통 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+header .logo {
+    font-size: 1.5em;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    margin: 0 10px;
+}
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#main-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+#main-banner .banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+.content-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
