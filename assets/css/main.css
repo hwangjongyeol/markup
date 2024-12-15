@@ -3909,9 +3909,9 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			.wrapper {
+			/*.wrapper {
 				margin: 4.75em 0;
-			}
+			}*/
 
 				.wrapper:before, .wrapper:after {
 					height: 4.75em;
@@ -3942,241 +3942,241 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+@media screen and (max-width: 736px) {
 
-			.wrapper {
-				margin: 0
-			}
+	.wrapper {
+		margin: 0
+	}
 
-				.wrapper:before, .wrapper:after {
-					height: 2.5em;
-				}
+	.wrapper:before, .wrapper:after {
+		height: 2.5em;
+	}
 
-				.wrapper:before {
-					top: -2.5em;
-				}
+	.wrapper:before {
+		top: -2.5em;
+	}
 
-				.wrapper:after {
-					bottom: -2.5em;
-					left: 0;
-				}
+	.wrapper:after {
+		bottom: -2.5em;
+		left: 0;
+	}
 
-				.wrapper .inner {
-					padding: 2em 2em 0.1em 2em ;
-				}
+	.wrapper .inner {
+		padding: 2em 2em 0.1em 2em ;
+	}
 
-				.wrapper.spotlight .inner {
-					-moz-align-items: -moz-flex-start;
-					-webkit-align-items: -webkit-flex-start;
-					-ms-align-items: -ms-flex-start;
-					align-items: flex-start;
-				}
+	.wrapper.spotlight .inner {
+		-moz-align-items: -moz-flex-start;
+		-webkit-align-items: -webkit-flex-start;
+		-ms-align-items: -ms-flex-start;
+		align-items: flex-start;
+	}
 
-				.wrapper.spotlight .image {
-					width: 19em;
-					margin: 0 1.75em 2em 0;
-				}
+	.wrapper.spotlight .image {
+		width: 19em;
+		margin: 0 1.75em 2em 0;
+	}
 
-				.wrapper.spotlight:nth-child(2n - 1) .image {
-					margin: 0 0 2em 1.75em;
-				}
+	.wrapper.spotlight:nth-child(2n - 1) .image {
+		margin: 0 0 2em 1.75em;
+	}
 
-		}
+}
 
-		@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
-			.wrapper.spotlight .inner {
-				display: block;
-			}
+	.wrapper.spotlight .inner {
+		display: block;
+	}
 
-			.wrapper.spotlight .image {
-				margin: 0 0 1em 0 !important;
-				max-width: 85%;
-				width: 12em;
-			}
+	.wrapper.spotlight .image {
+		margin: 0 0 1em 0 !important;
+		max-width: 85%;
+		width: 12em;
+	}
 
-		}
+}
 
-		@media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
 
-			.wrapper .inner {
-				padding: 2em 1.5em 0.1em 1.5em ;
-			}
+	.wrapper .inner {
+		padding: 2em 1.5em 0.1em 1.5em ;
+	}
 
-		}
+}
 
 /* Footer */
 
+#footer .inner {
+	padding: 5em 0 3em 0 ;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 55em;
+}
+
+#footer .inner > * {
+	width: 100%;
+}
+
+#footer .inner form {
+	margin: 0 3em 0 0;
+	width: calc(50% - 1.5em);
+}
+
+#footer .inner .contact {
+	width: calc(50% - 1.5em);
+}
+
+#footer .inner .copyright {
+	border-top: solid 2px rgba(255, 255, 255, 0.125);
+	list-style: none;
+	margin: 4em 0 2em 0;
+	padding: 2em 0 0 0;
+	width: 100%;
+}
+
+#footer .inner .copyright li {
+	border-left: solid 2px rgba(255, 255, 255, 0.125);
+	color: rgba(255, 255, 255, 0.35);
+	display: inline-block;
+	font-size: 0.9em;
+	line-height: 1;
+	margin-left: 1em;
+	padding: 0;
+	padding-left: 1em;
+}
+
+#footer .inner .copyright li:first-child {
+	border-left: 0;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#footer .inner .copyright li a {
+	color: inherit;
+}
+
+@media screen and (max-width: 1280px) {
+
+	#footer {
+		background-color: #2e3141;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-size: auto,
+		cover;
+		background-position: center,
+		center;
+		margin-top: -6.5em;
+		padding-top: 6.5em;
+	}
+
+}
+
+@media screen and (max-width: 980px) {
+
+	#footer {
+		margin-top: -4.75em;
+		padding-top: 4.75em;
+	}
+
 	#footer .inner {
-		padding: 5em 0 3em 0 ;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: row;
-		-webkit-flex-direction: row;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		margin: 0 auto;
-		width: 55em;
+		padding: 3em 3em 1em 3em ;
+		display: block;
+		width: 100%;
 	}
 
-		#footer .inner > * {
-			width: 100%;
-		}
-
-		#footer .inner form {
-			margin: 0 3em 0 0;
-			width: calc(50% - 1.5em);
-		}
-
-		#footer .inner .contact {
-			width: calc(50% - 1.5em);
-		}
-
-		#footer .inner .copyright {
-			border-top: solid 2px rgba(255, 255, 255, 0.125);
-			list-style: none;
-			margin: 4em 0 2em 0;
-			padding: 2em 0 0 0;
-			width: 100%;
-		}
-
-			#footer .inner .copyright li {
-				border-left: solid 2px rgba(255, 255, 255, 0.125);
-				color: rgba(255, 255, 255, 0.35);
-				display: inline-block;
-				font-size: 0.9em;
-				line-height: 1;
-				margin-left: 1em;
-				padding: 0;
-				padding-left: 1em;
-			}
-
-				#footer .inner .copyright li:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				#footer .inner .copyright li a {
-					color: inherit;
-				}
-
-	@media screen and (max-width: 1280px) {
-
-		#footer {
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto,
- cover;
-			background-position: center,
- center;
-			margin-top: -6.5em;
-			padding-top: 6.5em;
-		}
-
+	#footer .inner form {
+		width: 100%;
+		margin: 0 0 4em 0;
 	}
 
-	@media screen and (max-width: 980px) {
-
-		#footer {
-			margin-top: -4.75em;
-			padding-top: 4.75em;
-		}
-
-			#footer .inner {
-				padding: 3em 3em 1em 3em ;
-				display: block;
-				width: 100%;
-			}
-
-				#footer .inner form {
-					width: 100%;
-					margin: 0 0 4em 0;
-				}
-
-				#footer .inner .contact {
-					width: 100%;
-					margin: 0 0 4em 0;
-				}
-
-				#footer .inner .copyright {
-					margin: 4em 0 2em 0;
-				}
-
+	#footer .inner .contact {
+		width: 100%;
+		margin: 0 0 4em 0;
 	}
 
-	@media screen and (max-width: 736px) {
-
-		#footer {
-			margin-top: -2.5em;
-			padding-top: 2.5em;
-		}
-
-			#footer .inner {
-				padding: 2em 2em 0.1em 2em ;
-			}
-
-				#footer .inner form {
-					margin: 0 0 3em 0;
-				}
-
-				#footer .inner .contact {
-					margin: 0 0 3em 0;
-				}
-
+	#footer .inner .copyright {
+		margin: 4em 0 2em 0;
 	}
 
-	@media screen and (max-width: 480px) {
+}
 
-		#footer .inner .copyright li {
-			border-left: 0;
-			display: block;
-			margin: 1em 0 0 0;
-			padding-left: 0;
-		}
+@media screen and (max-width: 736px) {
 
-			#footer .inner .copyright li:first-child {
-				margin-top: 0;
-			}
-
+	#footer {
+		margin-top: -2.5em;
+		padding-top: 2.5em;
 	}
 
-	@media screen and (max-width: 360px) {
-
-		#footer .inner {
-			padding: 2em 1.5em 0.1em 1.5em ;
-		}
-
+	#footer .inner {
+		padding: 2em 2em 0.1em 2em ;
 	}
 
+	#footer .inner form {
+		margin: 0 0 3em 0;
+	}
 
-/* 동영상 스타일 */
+	#footer .inner .contact {
+		margin: 0 0 3em 0;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#footer .inner .copyright li {
+		border-left: 0;
+		display: block;
+		margin: 1em 0 0 0;
+		padding-left: 0;
+	}
+
+	#footer .inner .copyright li:first-child {
+		margin-top: 0;
+	}
+
+}
+
+@media screen and (max-width: 360px) {
+
+	#footer .inner {
+		padding: 2em 1.5em 0.1em 1.5em ;
+	}
+
+}
+/* 동영상 섹션 스타일 */
 .video-section {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh; /* 화면 전체 높이 */
+	overflow: hidden; /* 넘치는 요소 숨김 */
 }
 
 .video-section video {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	display: block;
 }
 
-/* 동영상 좌측 상단 TIMENET */
+/* 동영상 좌측 상단 TIMENET 로고 */
 .video-section .timenet-logo {
 	position: absolute;
 	top: 10px;
 	left: 20px;
 	color: rgba(255, 255, 255, 0.9);
 	font-family: 'Arial', sans-serif;
-	font-size: 1.8vw;
+	font-size: 1.5rem; /* 반응형 단위로 조정 */
 	font-weight: bold;
 	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 	z-index: 15;
@@ -4193,11 +4193,13 @@ input, select, textarea {
 	z-index: 10;
 	text-align: center;
 	width: 90%;
+	padding: 0 5%; /* 여백 추가 */
+	box-sizing: border-box;
 }
 
-/* 중간 텍스트 애니메이션 */
+/* 메인 타이틀 텍스트 */
 .video-section .text-logo-container .main-title {
-	font-size: 3.5vw;
+	font-size: 3rem; /* 기본 크기 */
 	font-weight: bold;
 	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 	line-height: 1.4;
@@ -4205,8 +4207,9 @@ input, select, textarea {
 	margin-bottom: 20px;
 }
 
+/* 설명 텍스트 */
 .video-section .text-logo-container .description {
-	font-size: 2vw;
+	font-size: 1.5rem; /* 기본 크기 */
 	font-weight: 400;
 	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 	opacity: 0;
@@ -4222,5 +4225,22 @@ input, select, textarea {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+	}
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+	.video-section .timenet-logo {
+		font-size: 1rem; /* 모바일에서 더 작은 로고 */
+		top: 5px;
+		left: 10px;
+	}
+
+	.video-section .text-logo-container .main-title {
+		font-size: 2rem; /* 모바일에서 폰트 크기 조정 */
+	}
+
+	.video-section .text-logo-container .description {
+		font-size: 1rem; /* 모바일에서 더 작은 설명 텍스트 */
 	}
 }
