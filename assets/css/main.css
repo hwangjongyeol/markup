@@ -3810,10 +3810,14 @@ input, select, textarea {
 				-ms-flex: 1;
 			}
 
-				.wrapper.spotlight .image img {
-					border-radius: 100%;
-					width: 100%;
-				}
+.wrapper.spotlight .image img {
+	border-radius: 100%;
+	width: 200px; /* 원하는 고정 너비 */
+	height: 200px; /* 원하는 고정 높이 */
+	/*object-fit: cover;*/ /* 이미지 크기가 넘칠 경우 잘라내기 */
+	overflow: hidden; /* 초과 내용 숨기기 */
+	display: block; /* 레이아웃 안정성을 위한 설정 */
+}
 
 			.wrapper.spotlight .content {
 				width: 100%;
