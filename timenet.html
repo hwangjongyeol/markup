@@ -11,16 +11,23 @@
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
-		<script>
-			// menu.html을 불러오기
-			fetch('menu.html')
-					.then(response => response.text())
-					.then(data => {
-						// menu.html 내용을 #page-wrapper 바로 밑에 삽입
-						document.getElementById('page-wrapper').insertAdjacentHTML('afterend', data);
-					})
-					.catch(error => console.error('Error loading menu:', error));
-		</script>
+		<header id="header" class="alt">
+			<h1><a href="index.html">TIMENET</a></h1>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+		<nav id="menu">
+			<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="timenet.html">COMPANY</a></li>
+					<li><a href="partner.html">PARTNERS</a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+			</div>
+		</nav>
 
 					<!-- Wrapper -->
 					<section id="wrapper">
