@@ -4308,6 +4308,13 @@ input, select, textarea {
 	height: 100%; /* 헤더 높이에 맞게 이미지 컨테이너 크기 조정 */
 }
 
+/* 반응형 스타일 */
+@media (min-width: 1280px) {
+	#wrapper > header .image-container {
+		height: 50vh; /* Adjust the value as needed */
+	}
+}
+
 /* 이미지 스타일 */
 #wrapper > header .image-container img {
 	width: 100%;
