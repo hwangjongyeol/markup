@@ -18,7 +18,7 @@
 						<a href="#services">Services</a>
 						<a href="#ai">AI</a>
 						<a href="#about">Company</a>
-						<a href="partner.html">Partner</a>
+						<a href="#footer">Careers</a>
 						<a href="#footer" class="nav-cta">Contact</a>
 					</nav>
 				</header>
@@ -62,7 +62,7 @@
 						<!-- 중간 텍스트 애니메이션 -->
 						<div class="hero-eyebrow">GLOBAL IT PARTNER</div>
             <div class="main-title">
-                더 빠른 혁신을 만드는 글로벌 IT 리더, TIMENET
+              더 빠른 혁신을 만드는 글로벌 IT 리더, TIMENET
             </div>
             <div class="description">
               AI 기반 디지털 전환부터 클라우드, 데이터 플랫폼, 네트워크까지
@@ -94,7 +94,7 @@
 
             <section id="services" class="section-block">
               <div class="inner">
-                <header class="section-title fade-in">
+                <header class="section-title">
                   <p class="eyebrow">Services</p>
                   <h2>글로벌 비즈니스를 위한 IT 포트폴리오</h2>
                   <p>산업 특화 경험과 기술 전문성을 기반으로 기업의 성장, 보안, 확장을 설계합니다.</p>
@@ -154,7 +154,7 @@
 
             <section id="ai" class="section-block alt">
               <div class="inner feature-grid">
-                <div class="feature-copy fade-in">
+                <div class="feature-copy">
                   <p class="eyebrow">AI Intelligence</p>
                   <h2>기업 맞춤형 AI & 데이터 인텔리전스</h2>
                   <p>업무 자동화, 예측 분석, 맞춤형 추천 등 실사용 중심의 AI 전략을 제안합니다.
@@ -169,7 +169,7 @@
                     <a href="#about" class="btn ghost">회사 소개</a>
                   </div>
                 </div>
-                <div class="feature-panel fade-in">
+                <div class="feature-panel">
                   <div class="stat-grid">
                     <div class="stat-card">
                       <strong>20+</strong>
@@ -194,7 +194,7 @@
 
             <section id="about" class="section-block">
               <div class="inner">
-                <header class="section-title center fade-in">
+                <header class="section-title center">
                   <p class="eyebrow">Company</p>
                   <h2>신뢰 가능한 글로벌 IT 파트너</h2>
                   <p>복잡한 IT 환경을 단순하게 만들고, 비즈니스 성장의 속도를 높입니다.</p>
@@ -356,19 +356,6 @@
 
 				// 각 fade-in 요소에 대해 Observer 적용
 				fadeIns.forEach(fadeIn => observer.observe(fadeIn));
-
-				const cardGrids = document.querySelectorAll('.card-grid');
-
-				const cardObserver = new IntersectionObserver((entries) => {
-					entries.forEach(entry => {
-						if (entry.isIntersecting) {
-							entry.target.classList.add('loaded');
-							cardObserver.unobserve(entry.target);
-						}
-					});
-				}, { threshold: 0.2 });
-
-				cardGrids.forEach(grid => cardObserver.observe(grid));
 			</script>
 	</body>
 </html>
