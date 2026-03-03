@@ -4,25 +4,24 @@
     <title>TIMENET</title>
     <meta charset="utf-8" />
     <meta name="description" content="TIMENET은 글로벌 IT 리더로서 AI 기반 디지털 전환, 클라우드, 데이터 플랫폼, 네트워크 구축까지 통합 서비스를 제공합니다." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0a6cff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   </head>
-  <body class="is-preload theme-light">
-    <!-- Page Wrapper -->
-      <div id="page-wrapper">
-        <a href="#main-content" class="skip-link">본문으로 이동</a>
-        <header id="header">
-          <h1><a href="index.html">TIMENET</a></h1>
-          <nav class="simple-nav" aria-label="주요 메뉴">
-            <a href="#services">Services</a>
-            <a href="#ai">AI</a>
-            <a href="#about">Company</a>
-            <a href="partner.html">Partner</a>
-            <a href="#footer" class="nav-cta">Contact</a>
-          </nav>
-        </header>
+	<body class="is-preload theme-light">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+				<header id="header">
+					<h1><a href="index.html">TIMENET</a></h1>
+					<nav class="simple-nav">
+						<a href="#services">Services</a>
+						<a href="#ai">AI</a>
+						<a href="#about">Company</a>
+						<a href="partner.html">Partner</a>
+						<a href="#footer" class="nav-cta">Contact</a>
+					</nav>
+				</header>
 				<!--<nav id="menu">
 					<div class="inner">
 						<h2>Menu</h2>
@@ -36,23 +35,27 @@
 				</nav>-->
 
 
-      <main id="main-content">
-        <!-- Video Section -->
-        <section class="video-section" aria-label="메인 히어로 섹션">
-          <!-- 동영상 -->
-          <video
-              autoplay
-              muted
-              playsinline
-              loop
-              crossorigin
-              poster="images/bg.jpeg"
-              aria-hidden="true"
-              tabindex="-1"
-          >
+				<!-- Video Section -->
+				<section class="video-section">
+					<!-- 동영상 -->
+					<video
+							autoplay
+							muted
+							playsinline
+							loop
+							crossorigin
+							poster="images/bg.jpeg"
+							aria-label="글로벌 IT 리더 TIMENET"
+							style="display: block; margin: 0; padding: 0; width: 100%; height: 100%;"
+					>
             <source src="assets/mov/1014379026.mp4" type="video/mp4" />
             <source src="assets/mov/main.mov" type="video/quicktime" />
-          </video>
+					</video>
+
+					<!-- 동영상 좌측 상단에 회사명 -->
+          <div class="timenet-logo">
+            TIMENET
+          </div>
 
 					<!-- 텍스트와 로고 영역 -->
 					<div class="text-logo-container">
@@ -65,17 +68,17 @@
               AI 기반 디지털 전환부터 클라우드, 데이터 플랫폼, 네트워크까지
               기업 운영을 더 민첩하고 안전하게 만드는 통합 서비스를 제공합니다.
             </div>
-            <div class="hero-actions">
-              <a href="#services" class="btn primary">서비스 보기</a>
-              <a href="#footer" class="btn ghost">문의하기</a>
-            </div>
-            <div class="hero-badges" aria-label="핵심 역량">
-              <span>AI Transformation</span>
-              <span>Cloud Native</span>
-              <span>Global Network</span>
-            </div>
-          </div>
-        </section>
+						<div class="hero-actions">
+							<a href="#services" class="btn primary">서비스 보기</a>
+							<a href="#footer" class="btn ghost">문의하기</a>
+						</div>
+						<div class="hero-badges">
+							<span>AI Transformation</span>
+							<span>Cloud Native</span>
+							<span>Global Network</span>
+						</div>
+					</div>
+				</section>
 
 				<!-- Banner
 					<section id="banner">
@@ -87,7 +90,7 @@
 					</section>-->
 
 				<!-- Wrapper -->
-          <section id="wrapper">
+					<section id="wrapper">
 
             <section id="services" class="section-block">
               <div class="inner">
@@ -214,9 +217,9 @@
             </section>
           </section>
 
-      <footer id="footer" aria-labelledby="footer-heading">
+          <section id="footer">
 					<div class="inner">
-						<h2 id="footer-heading" class="major">채용정보</h2>
+						<h2 class="major">채용정보</h2>
 						<p>TIMENET은 성장 중심의 보상과 공정한 평가로 인재의 가치를 존중합니다.
               디지털 플랫폼, AI·데이터, 네트워크, 클라우드 전 영역의 전문가가 함께 협력하여
               기업 고객의 혁신을 실현합니다.</p>
@@ -262,23 +265,23 @@
 							<li>정규직 / 프리랜서</li>
 						</ul>
 
-						<form id="contact-form" method="get" action="https://script.google.com/macros/s/AKfycbxQgSatUPL1w8h7qwEEpIbk4ZtIjXsuiNjDwWBrN4dzxZFHK9MMr5nMzVdLbLspwif0/exec" class="gform" novalidate>
+						<form method="get" action="https://script.google.com/macros/s/AKfycbxQgSatUPL1w8h7qwEEpIbk4ZtIjXsuiNjDwWBrN4dzxZFHK9MMr5nMzVdLbLspwif0/exec" class="gform">
 							<div class="fields">
 								<div class="field">
 									<label for="name">Name</label>
-									<input type="text" name="name" id="name" autocomplete="name" required aria-required="true" />
+									<input type="text" name="name" id="name" />
 								</div>
 								<div class="field">
 									<label for="email">Email</label>
-									<input type="email" name="email" id="email" autocomplete="email" required aria-required="true" />
+									<input type="email" name="email" id="email" />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4" required aria-required="true"></textarea>
+									<textarea name="message" id="message" rows="4"></textarea>
 								</div>
 							</div>
 							<ul class="actions">
-							<li><input type="submit" value="Send Message" /></li>
+							<li><input type="submit" value="Send Message" onclick="return check();" /></li>
 							</ul>
 						</form>
 
@@ -293,11 +296,9 @@
 							<li>ⓒTIMENET. All rights reserved.</li>
 						</ul>
 					</div>
-      </footer>
+				</section>
 
-      </main>
-
-      </div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -308,54 +309,37 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/form-submission-handler.js" data-cfasync="false" type="text/javascript" ></script>
 			<script>
-				const contactForm = document.getElementById("contact-form");
-				const contactName = document.getElementById("name");
-				const contactEmail = document.getElementById("email");
-				const contactMessage = document.getElementById("message");
+				function check() {
 
-				function validateContactForm(event) {
-					if (!contactName.value.trim()) {
+					var name = document.getElementById("name").value;
+					if (name === "") {
 						alert("이름을 입력해주세요.");
-						contactName.focus();
-						if (event) {
-							event.preventDefault();
-						}
 						return false;
 					}
 
-					if (!contactEmail.value.trim()) {
+					var email = document.getElementById("email").value;
+					if (email != "") {
+						var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
+						if (exptext.test(email) == false) {
+							//이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우
+							alert("입력한 메일형식이 올바르지 않습니다.");
+							document.formtag.email.focus();
+							return false;
+						}
+					} else {
 						alert("이메일을 입력해주세요.");
-						contactEmail.focus();
-						if (event) {
-							event.preventDefault();
-						}
 						return false;
 					}
 
-					if (!contactEmail.checkValidity()) {
-						alert("입력한 메일형식이 올바르지 않습니다.");
-						contactEmail.focus();
-						if (event) {
-							event.preventDefault();
-						}
-						return false;
-					}
-
-					if (!contactMessage.value.trim()) {
+					var message = document.getElementById("message").value;
+					if (message === "") {
 						alert("메시지를 입력해주세요.");
-						contactMessage.focus();
-						if (event) {
-							event.preventDefault();
-						}
 						return false;
 					}
+
 
 					return true;
 				}
-
-				contactForm?.addEventListener("submit", function (event) {
-					validateContactForm(event);
-				});
 
 				// 모든 fade-in 요소를 선택
 				const fadeIns = document.querySelectorAll('.fade-in');
